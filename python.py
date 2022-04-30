@@ -1,15 +1,15 @@
 # -*- encoding: utf-8 -*-
 
-# importando as libs necessárias para o projeto
+# Importando as libs necessárias para o projeto
 
 import json
 import time
 from lib2to3.pgen2 import driver
 
 import requests
-import pandas as pd  # lib para tratamento de dados
+import pandas as pd  # Lib para tratamento de dados
 from bs4 import BeautifulSoup
-# selenium é a ferramenta que irá "navegar" automaticamente no browser
+# Selenium é a ferramenta que irá "navegar" automaticamente no browser
 from selenium import webdriver
 from selenium.webdriver.edge.options import Options
 
@@ -42,8 +42,8 @@ def buildrank(type):
     soup = BeautifulSoup(html_content, "html.parser")
     table = soup.find(name="table")
 
-    # lib do Panda, converte o que recebe em dado puro, eliminando os conteúdos do html (ex; tags)
-    # df stands for Data Frame
+    # Lib do Panda, converte o que recebe em dado puro, eliminando os conteúdos do html (ex; tags)
+    # "df" stands for Data Frame
     df_full = pd.read_html(str(table))[0].head(10)
     df = df_full[["Unnamed: 0", "PLAYER", "TEAM", label]]
     # Nome das colunas que serão exibidas no arquivo que o bot gera
@@ -59,9 +59,9 @@ option.headless = False
 driver = webdriver.Edge(options=option)
 driver.get(url)
 time.sleep(10)
-# driver.implicitly_wait(10) / Melhor maneira de aguardar o conteúdo carregar
+# driver.implicitly_wait(10) / Melhor maneira de aguardar o conteúdo carregar (Comentado devido a problemas com browser em background)
 
-# Lista todos os ranks que serão gerados e armazena em top10rankings[k], onde ele é enviado para o aqruivo JSON
+# Lista todos os ranks que serão gerados e armazena em top10rankings[k], onde ele é enviado para o arquivo JSON
 for k in rankings:
     top10ranking[k] = buildrank(k)
 
