@@ -1,0 +1,64 @@
+{
+    "points": [
+        {
+            "pos": 1,
+            "player": "Nikola Jokic",
+            "team": "DEN",
+            "total": 31.0
+        },
+        {
+            "pos": 2,
+            "player": "Jimmy Butler",
+            "team": "MIA",
+            "total": 30.5
+        },
+        {
+            "pos": 3,
+            "player": "Jayson Tatum",
+            "team": "BOS",
+            "total": 29.5
+        },
+        {
+            "pos": 4,
+            "player": "Luka Doncic",
+            "team": "DAL",
+            "total": 29.0
+        },
+        {
+            "pos": 5,
+            "player": "Giannis Antetokounmpo",
+            "team": "MIL",
+            "total": 28.6
+        },
+        {
+            "pos": 6,
+            "player": "Stephen Curry",
+            "team": "GSW",
+            "total": 28.0
+        },
+        {
+            "pos": 7,
+            "player": "Jalen Brunson",
+            "team": "DAL",
+            "total": 27.8
+        },
+        {
+            "pos": 8,
+            "player": "Brandon Ingram",
+            "team": "NOP",
+            "total": 27.0
+        },
+        {
+            "pos": 9,
+            "player": "Kevin Durant",
+            "team": "BKN",
+            "total": 26.3
+        },
+        {
+            "pos": 10,
+            "player": "Joel Embiid",
+            "team": "PHI",
+            "total": 26.2
+        }
+    ]
+}
